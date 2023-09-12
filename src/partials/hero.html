@@ -1,39 +1,45 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title">ice cream made with <span class="hero-title-accent">passion</span></h1>
+      <h1 class="hero-title">
+        ice cream made with <span class="hero-title-accent">passion</span>
+      </h1>
       <div class="hero-links">
         <a class="btn btn-border" href="#products">Products</a>
         <a class="btn btn-underline" href="#about">How it's made</a>
       </div>
       <div class="hero-description">
         <img
-          src="./images/desktop-plate@1x.png"
-          srcset="./images/desktop-plate@2x.png 2x, ./images/desktop-plate@1x.png 1x"
+          src="src/images/desktop-plate@1x.png"
+          srcset="
+            src/images/desktop-plate@2x.png 2x,
+            src/images/desktop-plate@1x.png 1x
+          "
           alt="Plate with ice cream"
           class="hero-plate"
         />
         <div class="text-container">
           <p class="hero-text">
-            Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-            unforgettable experience!
+            Indulge in a scoop of ice cream made with passion and treat your
+            taste buds to an unforgettable experience!
           </p>
           <a class="hero-link arrow-button" href="#products">
             <svg class="hero-arrow" width="41" height="15">
-              <use href="./icons/icons.svg#icon-arrow"></use>
+              <use href="src/icons/icons.svg#icon-arrow"></use>
             </svg>
           </a>
         </div>
       </div>
       <div class="stats">
         <p class="stats-item"><span class="stats-number">16</span> cafes</p>
-        <p class="stats-item"><span class="stats-number">23</span> food trucks</p>
+        <p class="stats-item">
+          <span class="stats-number">23</span> food trucks
+        </p>
       </div>
       <div class="hero-image-container">
-        <!-- może te responsiwne z <picture>? -->
         <img
-          src="./images/mobile.png"
-          srcset="./images/mobile.png 177w, ./images/mobile@2x.png 354w ./images/tablet.png 268w, ./images/tablet@2x.png 536w ./images/desktop.png 447w, ./images/desktop.png 894w"
+          src="src/images/mobile.png"
+          srcset="src/images/mobile.png 177w, src/images/mobile@2x.png 354w src/images/tablet.png 268w, src/images/tablet@2x.png 536w src/images/desktop.png 447w, src/images/desktop.png 894w"
           sizes="(min-width:768px) 268px, (min-width:1200px) 447px "
           alt="Some Ice Cream"
           class="hero-ic-image"

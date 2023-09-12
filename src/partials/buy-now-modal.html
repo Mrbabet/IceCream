@@ -2,7 +2,7 @@
   <div class="buy-now-modal">
     <button class="close-modal-btn" type="button" data-modal-close>
       <svg width="32" height="32">
-        <use xlink:href="./icons/icons.svg#icon-close"></use>
+        <use xlink:href="src/icons/icons.svg#icon-close"></use>
       </svg>
     </button>
 
@@ -28,13 +28,34 @@
         </li>
       </ul>
       <div class="input-container">
-        <input type="text" aria-label="Name" name="name" placeholder="Name" minlength="2" required />
+        <input
+          type="text"
+          aria-label="Name"
+          name="name"
+          placeholder="Name"
+          minlength="2"
+          required
+        />
       </div>
       <div class="input-container">
-        <input type="tel" aria-label="Phone Number" name="phone" placeholder="Phone" pattern="[0-9]{9}" required />
+        <input
+          type="tel"
+          aria-label="Phone Number"
+          name="phone"
+          placeholder="Phone"
+          pattern="[0-9]{9}"
+          required
+        />
       </div>
       <div class="input-container">
-        <textarea name="comment" aria-label="Comment" placeholder="Comment" cols="30" rows="10" minlength="3"></textarea>
+        <textarea
+          name="comment"
+          aria-label="Comment"
+          placeholder="Comment"
+          cols="30"
+          rows="10"
+          minlength="3"
+        ></textarea>
       </div>
       <button class="buy-now-submit-button" type="submit">Submit</button>
     </form>

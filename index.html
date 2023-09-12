@@ -1,13 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>iScream Shop</title>
+    <link rel="icon" type="image/x-icon" href="./icons/favicon-new.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    {{> header }}
+    <main>{{> hero }} {{> products }}</main>
+    {{> about }} {{> advantages }}
+    <div class="gallery-customers-review-section">
+      {{> gallery}} {{> customers}}
+    </div>
+    {{> contacts}} {{> footer}}
+    <div>
+      <button type="button" class="go-to-top-button" onclick="topFunction()">
+        <img
+          src="src/images/up-button.png"
+          alt="ice-cream cone"
+          class="go-to-button-image"
+        />
+      </button>
+    </div>
+    {{> mobile-menu}}{{> buy-now-modal}}{{> products-modal}}{{>
+    franchise-modal}}{{> our-location-modal}}{{> read-more-modal}}
+    <script src="./main.js" type="module"></script>
+    <script src="./src/js/back-to-top.js"></script>
   </body>
 </html>
