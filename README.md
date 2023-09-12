@@ -1,41 +1,38 @@
 # GOIT TEAM PROJECT ISCREAM
 
-## Przed rozpoczęciem pracy
+## Before you start
 
-Jeden raz na projekt zainstalować wszystkie zalezności.
+Check all dependencies once per project.
 
 ```shell
 npm ci
 ```
 
-### Praca
+### Work
 
-Włączyć tryp pracy.
+
+Turn on the dev mode.
 
 ```shell
 npm run dev
 ```
 
-W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
+In your browser, go to [http://localhost:1234](http://localhost:1234).
 
 ### Deploy
 
-Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu na GitHub Pages, w
-gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po
-bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json`
-zmienić pole `homepage` i skrypt `build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na
-swoje.
+The code will automatically collect and do deploy the current version of the project to GitHub Pages, v
+`gh-pages` branch, whenever changes are made to `main`. For example, after
+direct push or after accepting a pull-request. For this to work, we need the `package.json` file
+change the `homepage` field and the `build` script, changing `username` and `repository_name` to
+own.
 
 ```json
-"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
+"homepage": "https://username.github.io/repository_name",
 "scripts": {
-  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
+  "build": "parcel build src/*.html --public-url /repository_name/"
 },
 ```
-
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który jest wpisany w poprawione
-właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
 ## Contributors ✨
 
