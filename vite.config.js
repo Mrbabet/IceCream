@@ -7,4 +7,5 @@ export default {
       partialDirectory: resolve(__dirname, "./src/partials"),
     }),
   ],
+  base: "/IceCream/",
 };
